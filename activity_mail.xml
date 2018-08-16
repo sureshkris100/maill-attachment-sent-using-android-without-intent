@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MailActivity" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etRecipient"
+        android:hint="To"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etRecipientcc"
+        android:hint="To CC"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/etRecipientbcc"
+        android:hint="To Bcc"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:hint="Message"
+        android:gravity="start"
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:imeOptions="actionDone"
+        android:layout_height="100dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="path"
+            android:id="@+id/path"
+            android:layout_marginBottom="16dp"
+            />
+        <Button
+            android:id="@+id/btnBrowse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#6c27da"
+            android:text="Browse"
+            android:textColor="#fff"
+            android:layout_marginBottom="16dp"
+            />
+
+
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6c27da"
+        android:text="SEND"
+        android:textColor="#fff" />
+
+
+</LinearLayout></ScrollView>
